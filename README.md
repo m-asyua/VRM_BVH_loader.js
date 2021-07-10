@@ -1,8 +1,8 @@
-# VRM_BVH_test_loader.js
+# VRM_BVH_loader.js
 
-<img width="706" alt="VRM_BVH_test_loader_2021_07" src="https://user-images.githubusercontent.com/83494645/125158693-b1973280-e1ad-11eb-9d20-6ead73724a84.png">
+<img width="715" alt="VRM_BVH_test_loader_2021_07_p1" src="https://user-images.githubusercontent.com/83494645/125166783-18314600-e1d8-11eb-81cb-67c7801c1b15.png">
 
-A sample program to read VRM files and characters by BVH files.
+A sample program to read VRM files and to controll VRM characters by BVH files.
 
 - You need to get files regarding three-vrm.js (three.js, three-vrm.js, GLTFLoader.js, BVHLoader.js).
 
@@ -10,15 +10,9 @@ A sample program to read VRM files and characters by BVH files.
 
 <script src="./js/VRM_BVH_test_loader.js"></script>
 
-and use read_vrm_file_api(0,input) or read_bvh_file_api(0,input) to read VRM and BVH.
+and use read_vrm_file_api(0,input) or read_bvh_file_api(0,input) to read VRM and BVH. Numbers(0-2) represent unique number for each VRM character(0-2).
 
-- Please use vrm_character_array, 
-
-
-	var  vrm_character_array  =  new Array();   // これはjs側に入れる
-
-
-and set positions and rotation for characters.
+- Please set positions and rotations for VRM characters 0-2.
 
 
 	let characters_position = [ 

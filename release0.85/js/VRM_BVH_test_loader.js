@@ -29,37 +29,6 @@ function read_vrm_file_api(number,input){
 }
 
 
-function ajax_get(get_url,number){
-
-		var result ="";
-		var loc = location.pathname,
-		dir = loc.substring(0, loc.lastIndexOf('/')) + '/';
-	    get_url = location.origin+"/"+dir+get_url+"?"+(new Date);  
-
-//console.log(get_url);
-
-		let req = new XMLHttpRequest();
-		req.open("GET",get_url, true);
-		req.setRequestHeader("Content-Type" , "application/x-www-form-urlencoded");
-
-		req.onreadystatechange = function(){
-
-			if(req.readyState == 4){
-				result = req.responseText;
-
-				if( result != null ){
-						execute_bvh(number, result);
-
-				}else{
-//					alert("Ajax error");
-//					return;
-				}
-			}
-		}
-		req.send(null);
-}
-
-
 
 function read_bvh_file_api(number,input){
 
@@ -73,10 +42,6 @@ function read_bvh_file_api(number,input){
 
 	reader.readAsText(input, 'UTF-8');
 
-}
-
-function read_bvh_file(number,input){
-     ajax_get(input,number);
 }
 
 

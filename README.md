@@ -1,6 +1,6 @@
 # VRM_BVH_loader.js
 
-<img width="715" alt="VRM_BVH_test_loader_2021_07_p1" src="https://user-images.githubusercontent.com/83494645/125166783-18314600-e1d8-11eb-81cb-67c7801c1b15.png">
+<img width="721" alt="VRM_BVH_test_loader_2021_07_p2" src="https://user-images.githubusercontent.com/83494645/125167148-0fda0a80-e1da-11eb-85d6-8266be7ae8fc.png">
 
 A sample program to read VRM files and to controll VRM characters by BVH files.
 

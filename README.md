@@ -1,4 +1,4 @@
-# VRM_BVH_test_loader
+# VRM_BVH_test_loader.js
 
 <img width="706" alt="VRM_BVH_test_loader_2021_07" src="https://user-images.githubusercontent.com/83494645/125158693-b1973280-e1ad-11eb-9d20-6ead73724a84.png">
 

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+
+<!--  please customize the location of .js  files.  We do not provide these files.  -->
+<script src="./js/three.js"></script>
+<script src="./js/three-vrm.js"></script>
+<script src="./js/GLTFLoader.js"></script>
+<script src="./js/BVHLoader.js"></script>
+
+<script src="./js/VRM_BVH_test_loader.js"></script>
+
+<br>
+
+<div id="canvas-frame" style="position: absolute; top: 10px;  left: 10px;"   >
+</div>
+
+
+
+<div  id="messages" style="position:absolute;top:350px;left:0px;">
+<font size="2">
+<div name="user_message0" id="user_message0">select vrm file for character 0</div>
+<div name="user_message1" id="user_message1">select vrm file for character 1</div>
+<div name="user_message2" id="user_message2">select vrm file for character 2</div><br />
+</font>
+</div>
+
+<div  style="position:absolute;top:10px;left:600px;" >
+<font size="2">
+character0 VRM
+<input id="read_file_vrm0" type="file" />
+<br>
+character1 VRM
+<input id="read_file_vrm1" type="file" />
+<br>
+
+character2 VRM
+<input id="read_file_vrm2" type="file" />
+</font>
+</div>
+
+
+
+<div  style="position:absolute;top:150px;left:600px;" >
+<font size="2">
+character0 BVH
+<input id="read_file_bvh0" type="file" />
+
+<br>
+character1 BVH
+<input id="read_file_bvh1" type="file" />
+<br>
+
+character2 BVH
+<input id="read_file_bvh2" type="file" />
+</font>
+</div>
+
+
+
+
+
+
+<script>
+
+	var  canvas_id   =   null;
+	var  width       =    500;
+	var  height      =    300;
+	var  scene;
+	var  renderer;
+	var  camera;
+
+
+	let characters_position = [ 
+		[-0.1 , 0.90 , -0.78],
+		[ -0.4,  0.84, -0.42],
+		[ 0.22,  0.78, -0.22]
+	];
+
+	let characters_rotation = [ 
+		[0,         2.93,    0],
+		[ 0,         4.670,   0],
+		[ 0.0349,    6.57,    0]
+	];
+
+
+	my_start();
+
+
+window.addEventListener('DOMContentLoaded', function() {
+
+	document.getElementById('read_file_vrm0').addEventListener('change', function(){
+		let input = document.getElementById('read_file_vrm0').files[0];
+		read_vrm_file_api(0,input);
+	}, true)
+	document.getElementById('read_file_vrm1').addEventListener('change', function(){
+		let input = document.getElementById('read_file_vrm1').files[0];
+		read_vrm_file_api(1,input);
+	}, true)
+	document.getElementById('read_file_vrm2').addEventListener('change', function(){
+		let input = document.getElementById('read_file_vrm2').files[0];
+		read_vrm_file_api(2,input);
+	}, true)
+
+
+	document.getElementById('read_file_bvh0').addEventListener('change', function(){
+		let input = document.getElementById('read_file_bvh0').files[0];
+		read_bvh_file_api(0,input);
+	}, true)
+	document.getElementById('read_file_bvh1').addEventListener('change', function(){
+		let input = document.getElementById('read_file_bvh1').files[0];
+		read_bvh_file_api(1,input);
+	}, true)
+	document.getElementById('read_file_bvh2').addEventListener('change', function(){
+		let input = document.getElementById('read_file_bvh2').files[0];
+		read_bvh_file_api(2,input);
+	}, true)
+
+})
+
+
+
+
+
+
+function my_start(){
+
+	renderer = new THREE.WebGLRenderer();
+	renderer.setSize( width, height );
+	renderer.setPixelRatio( window.devicePixelRatio );
+	renderer.setClearColor(0xeeeeee);
+	canvas_id = document.getElementById("canvas-frame");
+	canvas_id.appendChild( renderer.domElement );
+
+	// camera
+	camera = new THREE.PerspectiveCamera(40.0,   width/height    , 0.1,  200.0 );
+	camera.position.set( -0.02,  1.52, 0.62 );
+	camera.rotation.set( -0.28,  -0.02,0 );
+
+	// scene
+	scene = new THREE.Scene();
+
+	// light
+	const light = new THREE.DirectionalLight( 0xffffff );
+	light.position.set( 1.0, 1.0, 1.0 ).normalize();
+	scene.add( light );
+
+}
+
+
+</script>
+
+</body>
+
+</html>
+

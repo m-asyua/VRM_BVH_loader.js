@@ -2,15 +2,15 @@
 
 <img width="721" alt="VRM_BVH_test_loader_2021_07_p2" src="https://user-images.githubusercontent.com/83494645/125167148-0fda0a80-e1da-11eb-85d6-8266be7ae8fc.png">
 
-A sample program to read VRM files and to controll VRM characters by BVH files.
+A sample program to read VRM and BVH files.
 
-- You need to get files regarding three-vrm.js (three.js, three-vrm.js, GLTFLoader.js, BVHLoader.js).
+- You need to get files regarding three-vrm.js (three.js, three-vrm.js, GLTFLoader.js, and BVHLoader.js).
 
-- Please write a descripstion to use "VRM_BVH_test_loader.js"
+- Please write a descripstion to use "VRM_BVH_loader-min.js"
 ```
 <script src="./js/VRM_BVH_loader-min.js"></script>
 ```
-and use read_vrm_file_api, read_bvh_file_api
+and use read_vrm_file_api,and  read_bvh_file_api to read VRM and BVH files.
 
 
 ```
@@ -22,7 +22,7 @@ read_bvh_file_api(0,input)
 ....
 
 ```
-to read VRM and BVH. Numbers(0-2) represent unique number for each VRM character(0-2).
+Numbers(0-2) represent unique number for each VRM character(0-2).
 
 - Please set positions and rotations for VRM characters 0-2.
 

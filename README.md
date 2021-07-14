@@ -8,7 +8,7 @@ A sample program to read VRM files and to controll VRM characters by BVH files.
 
 - Please write a descripstion to use "VRM_BVH_test_loader.js"
 ```
-<script src="./js/VRM_BVH_test_loader.js"></script>
+<script src="./js/VRM_BVH_loader-min.js"></script>
 ```
 and use read_vrm_file_api, read_bvh_file_api
 

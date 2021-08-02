@@ -24,7 +24,7 @@ read_bvh_file_api(0,input)
 ```
 Numbers(0-2) represent unique number for each VRM character(0-2).
 
-- Please set positions and rotations for VRM characters 0-2.
+- Please set positions and rotations for VRM characters 0-2. [] in characters_position means position.x, position.y, and position.z for each character. [] in characters_rotation means rotation.x, rotation.y and rotation.z. 
 
 ```
 	let characters_position = [ 

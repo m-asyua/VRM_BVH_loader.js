@@ -80,7 +80,6 @@ console.log(bvh_object);
 
 function body_pose_set(bvh_object, num_of_clip, pose_content, character_id){
 
-/*
 
 //	input_rotation(pose_content.hips.rotation          ,   1 ,bvh_object,num_of_clip);
 
@@ -98,25 +97,6 @@ function body_pose_set(bvh_object, num_of_clip, pose_content, character_id){
 	input_rotation(pose_content.leftLowerLeg.rotation  ,  29 ,bvh_object,num_of_clip);
 	input_rotation(pose_content.rightUpperLeg.rotation ,  33 ,bvh_object,num_of_clip);
 	input_rotation(pose_content.rightLowerLeg.rotation ,  35 ,bvh_object,num_of_clip);
-
-*/
-
-//	input_rotation(pose_content.hips.rotation          ,   1 ,bvh_object,num_of_clip);
-
-	input_rotation(pose_content.upperChest.rotation    ,   9 ,bvh_object,num_of_clip);
-	input_rotation(pose_content.chest.rotation         ,   7  ,bvh_object,num_of_clip);
-	input_rotation(pose_content.neck.rotation          ,  11  ,bvh_object,num_of_clip);
-	input_rotation(pose_content.head.rotation          ,  13  ,bvh_object,num_of_clip);
-	input_rotation(pose_content.leftUpperArm.rotation  ,  37 ,bvh_object,num_of_clip);
-	input_rotation(pose_content.leftLowerArm.rotation  ,  39 ,bvh_object,num_of_clip);
-	input_rotation(pose_content.leftHand.rotation      ,  41 ,bvh_object,num_of_clip);
-	input_rotation(pose_content.rightUpperArm.rotation ,  85 ,bvh_object,num_of_clip);
-	input_rotation(pose_content.rightLowerArm.rotation ,  87 ,bvh_object,num_of_clip);
-	input_rotation(pose_content.rightHand.rotation     ,  89 ,bvh_object,num_of_clip);
-	input_rotation(pose_content.leftUpperLeg.rotation  ,  131 ,bvh_object,num_of_clip);
-	input_rotation(pose_content.leftLowerLeg.rotation  ,  133 ,bvh_object,num_of_clip);
-	input_rotation(pose_content.rightUpperLeg.rotation ,  141 ,bvh_object,num_of_clip);
-	input_rotation(pose_content.rightLowerLeg.rotation ,  143 ,bvh_object,num_of_clip);
 
 
 
@@ -229,4 +209,5 @@ function display_user_message(text, number, add){
 	if(add == true){ old_text = document.getElementById("user_message"+number).innerHTML; }
 	document.getElementById("user_message"+number).innerHTML  = old_text + text;
 }
+
 

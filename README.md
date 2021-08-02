@@ -1,6 +1,6 @@
-# VRM_BVH_loader-min.js
+# VRM_BVH_loader.js
 
-<img width="721" alt="VRM_BVH_test_loader_2021_07_p2" src="https://user-images.githubusercontent.com/83494645/125167148-0fda0a80-e1da-11eb-85d6-8266be7ae8fc.png">
+<img width="705" alt="sample_img" src="https://user-images.githubusercontent.com/83494645/127798094-54087216-1898-466a-a7f8-4c3770621ef3.png">
 
 A sample program to read VRM and BVH files.
 

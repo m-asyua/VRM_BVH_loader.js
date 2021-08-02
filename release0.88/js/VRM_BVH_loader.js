@@ -54,7 +54,7 @@ function execute_bvh(character_id, bvh_file_content){
 	const  bvh_loader  =  new THREE.BVHLoader();
 	var    bvh_object  =  bvh_loader.parse(bvh_file_content);
 
-console.log(bvh_object);
+//console.log(bvh_object);
 
 	let number_pos = bvh_object.clip.tracks[1].values.length / 4;  
 	// count the number of clips
@@ -171,7 +171,6 @@ function initCharacter( vrm ) {
 
 
 function  vrm_rot_Hips(character_id, x,y,z){
-//	y += Math.PI;
 	body_rotation(THREE.VRMSchema.HumanoidBoneName.Hips, character_id, x,y,z);
 }
 

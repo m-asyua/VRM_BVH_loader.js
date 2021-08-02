@@ -110,9 +110,9 @@ function body_pose_set(bvh_object, num_of_clip, pose_content, character_id){
 
 
 function input_rotation(object, num_parts, bvh_object,  num_clip){
-	object[0]    = bvh_object.clip.tracks[  num_parts  ].values[num_clip +0];
-	object[1]    = -bvh_object.clip.tracks[  num_parts  ].values[num_clip +1];
-	object[2]    = bvh_object.clip.tracks[  num_parts  ].values[num_clip +2];
+	object[0]    = -bvh_object.clip.tracks[  num_parts  ].values[num_clip +0];
+	object[1]    = bvh_object.clip.tracks[  num_parts  ].values[num_clip +1];
+	object[2]    = -bvh_object.clip.tracks[  num_parts  ].values[num_clip +2];
 	object[3]    = bvh_object.clip.tracks[  num_parts  ].values[num_clip +3];
 }
 

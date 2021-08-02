@@ -8,7 +8,7 @@ A sample program to read VRM and BVH files.
 
 - Please write a descripstion to use "VRM_BVH_loader-min.js"
 ```
-<script src="./js/VRM_BVH_loader-min.js"></script>
+<script src="./js/VRM_BVH_loader.js"></script>
 ```
 and use read_vrm_file_api,and  read_bvh_file_api to read VRM and BVH files.
 

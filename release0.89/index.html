@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+
+
+<!--  please customize the location of .js  files.  We do not provide these files.  -->
+<script src="https://unpkg.com/three@0.134.0/build/three.js"></script>
+<script src="https://unpkg.com/three@0.134.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://unpkg.com/three@0.134.0/examples/js/loaders/BVHLoader.js"></script>
+<script src="https://pixiv.github.io/three-vrm/lib/three-vrm.js"></script>
+
+<script src="https://raw.githubusercontent.com/m-asyua/VRM_BVH_loader.js/main/release0.89/VRM_BVH_loader.js"></script>
+
+</head>
+
+<br>
+
+<div id="canvas-frame" style="position: absolute; top: 10px;  left: 10px;"   >
+</div>
+
+
+
+<div  id="messages" style="position:absolute;top:350px;left:0px;">
+<font size="2">
+<div name="user_message0" id="user_message0">select vrm file for character 0</div>
+<div name="user_message1" id="user_message1">select vrm file for character 1</div>
+<div name="user_message2" id="user_message2">select vrm file for character 2</div><br>
+</font>
+</div>
+
+<div  style="position:absolute;top:10px;left:600px;" >
+<font size="2">
+character0 VRM
+<input id="read_file_vrm0" type="file" />
+<br>
+character1 VRM
+<input id="read_file_vrm1" type="file" />
+<br>
+
+character2 VRM
+<input id="read_file_vrm2" type="file" />
+</font>
+</div>
+
+
+
+<div  style="position:absolute;top:150px;left:600px;" >
+<font size="2">
+character0 BVH
+<input id="read_file_bvh0" type="file" />
+
+<br>
+character1 BVH
+<input id="read_file_bvh1" type="file" />
+<br>
+
+character2 BVH
+<input id="read_file_bvh2" type="file" />
+</font>
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+
+<!--  please customize the location of .js  files.  We do not provide these files.  -->
+<script src="https://unpkg.com/three@0.134.0/build/three.js"></script>
+<script src="https://unpkg.com/three@0.134.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://unpkg.com/three@0.134.0/examples/js/loaders/BVHLoader.js"></script>
+<script src="https://unpkg.com/@pixiv/three-vrm@0.6.7/lib/three-vrm.js"></script>
+
+<script src="VRM_BVH_loader.js"></script>
+
+</head>
+
+<br>
+
+<div id="canvas-frame" style="position: absolute; top: 10px;  left: 10px;"   >
+</div>
+
+
+
+
+<div  style="position:absolute;top:10px;left:600px;" >
+<font size="2">
+
+character0 VRM
+<input id="read_file_vrm0" type="file" /><br>
+character1 VRM
+<input id="read_file_vrm1" type="file" /><br>
+character2 VRM
+<input id="read_file_vrm2" type="file" /><br>
+
+</font>
+</div>
+
+
+<div  style="position:absolute;top:150px;left:600px;" >
+<font size="2">
+
+character0 BVH
+<input id="read_file_bvh0" type="file" /><br>
+character1 BVH
+<input id="read_file_bvh1" type="file" /><br>
+character2 BVH
+<input id="read_file_bvh2" type="file" /><br>
+
+</font>
+</div>
+
+
+
+<script>
+
+
+	let  width       =    500;
+	let  height      =    300;
+
+	let characters_position = [ 
+		[ -0.1,  0.90,  -0.78],
+		[ -0.4,  0.84,  -0.42],
+		[ 0.22,  0.78,  -0.22]
+	];
+
+	let characters_rotation = [ 
+		[ 0,         2.93,    0],
+		[ 0,         4.670,   0],
+		[ 0.0349,    6.57,    0]
+	];
+
+	let camera_position = [ -0.02,   1.52,  0.62 ];
+	let camera_rotation = [ -0.28,  -0.02,  0    ]; 
+
+
+</script>
+
+
+
+</body>
+
+</html>

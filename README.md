@@ -1,11 +1,10 @@
 # VRM_BVH_loader.js
 
-
-You can try it on <a href="https://social-exp.site/VRM_BVH_loader.js/release0.9/index.html">this site</a>.
+#  You can try it on <a href="https://social-exp.site/VRM_BVH_loader.js/release0.9/index.html">this site</a>.
 
 <img width="369" alt="tmp0" src="https://user-images.githubusercontent.com/83494645/143027611-ceb85e37-6672-4b83-8d3c-0a9da9671306.png">
 
-<img width="372" alt="tmp1" src="https://user-images.githubusercontent.com/83494645/143027667-aea46c60-6d0e-44b1-8550-bd4e763a65e1.png">
+<img width="341" alt="tmp2" src="https://user-images.githubusercontent.com/83494645/143029462-63b5ca5a-95a3-43ef-a76f-09a990e1f4df.png">
 
 
 A sample program to read VRM and BVH files.

@@ -204,8 +204,8 @@ function vrm_model_load(character_id, vrm_file_name, x,y,z){
 			} );
 		},
 		( progress ) => {
-			let percent = ( progress.loaded / progress.total ) *100 ;
-			console.log("Loading model..."+vrm_file_name+","+percent+"%" );
+			// let percent = ( progress.loaded / progress.total ) *100 ;
+			// console.log("Loading model..."+vrm_file_name+","+percent+"%" );
 		},
 			( error ) => console.error( error )
 	);

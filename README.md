@@ -1,7 +1,7 @@
 # VRM_BVH_loader.js
 
 
-You can try it on <a href="https://social-exp.site/VRM_BVH_loader.js/sample_0.88.html">this site</a>.
+You can try it on <a href="https://social-exp.site/VRM_BVH_loader.js/release0.9/index.html">this site</a>.
 
 <img width="710" alt="tmp001" src="https://user-images.githubusercontent.com/83494645/127801612-b50b5c00-5388-4e66-9a8e-88d5a26d23c1.png">
 

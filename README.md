@@ -2,7 +2,7 @@
 
 #  You can try it on <a href="https://social-exp.site/VRM_BVH_loader.js/release0.9/index.html">this site</a>.
 
-<img width="369" alt="tmp0" src="https://user-images.githubusercontent.com/83494645/143027611-ceb85e37-6672-4b83-8d3c-0a9da9671306.png">
+<img width="369" alt="tmp0" src="https://user-images.githubusercontent.com/83494645/143512380-d618fad7-f9ee-4f60-ad47-c2f92a060bc1.png">
 
 <img width="341" alt="tmp2" src="https://user-images.githubusercontent.com/83494645/143029462-63b5ca5a-95a3-43ef-a76f-09a990e1f4df.png">
 

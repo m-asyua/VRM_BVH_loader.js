@@ -9,7 +9,7 @@
 
 A sample program to read VRM and BVH files.
 
-- You need to get files regarding three-vrm.js (three.js, three-vrm.js, GLTFLoader.js, and BVHLoader.js).
+- You need to prepare files regarding three-vrm.js (three.js, three-vrm.js, GLTFLoader.js, and BVHLoader.js).
 
 - Please write a descripstion to use "VRM_BVH_loader.js"
 ```
